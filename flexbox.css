@@ -1,0 +1,56 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Div boxes with float */
+.Div {
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    margin: 10px;
+}
+#div1 {
+    background-color: aqua;
+    float: right;   /* Box1 floats to right */
+}
+#div2 {
+    background-color: rgb(0, 255, 115);
+    float: left;    /* Box2 floats to left */
+}
+
+/* Flexbox child boxes */
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: 10px;
+}
+
+/* Flexbox parent container 
+   Note: Only the LAST flex-direction applies */
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* final applied property */
+}
+
+/* Individual box colors */
+#Box1{ 
+    background-color: rgb(29, 107, 155);
+    clear: both; 
+}
+#Box2{ 
+    background-color: rgb(214, 13, 13); 
+}
+#Box3{
+    background-color: rgb(29, 107, 155); 
+}
+#Box4{ background-color: rgb(117, 205, 3); 
+}
+#Box5{ background-color: rgb(214, 187, 14); 
+}
